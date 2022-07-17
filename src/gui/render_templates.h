@@ -287,6 +287,246 @@ static void conc3d(Cache,SBPP,DBPP) (const void * s) {
 #undef SCALERHEIGHT
 #undef SCALERFUNC
 
+#define SCALERNAME		Normal4x
+#define SCALERWIDTH		4
+#define SCALERHEIGHT	4
+#define SCALERFUNC								\
+	line0[0] = P;								\
+	line0[1] = P;								\
+	line0[2] = P;								\
+	line0[3] = P;								\
+	line1[0] = P;								\
+	line1[1] = P;								\
+	line1[2] = P;								\
+	line1[3] = P;								\
+	line2[0] = P;								\
+	line2[1] = P;								\
+	line2[2] = P;                               \
+	line2[3] = P;                               \
+	line3[0] = P;								\
+	line3[1] = P;								\
+	line3[2] = P;                               \
+	line3[3] = P;
+#include "render_simple.h"
+#undef SCALERNAME
+#undef SCALERWIDTH
+#undef SCALERHEIGHT
+#undef SCALERFUNC
+
+#define SCALERNAME		Normal5x
+#define SCALERWIDTH		5
+#define SCALERHEIGHT	5
+#define SCALERFUNC								\
+	line0[0] = P;								\
+	line0[1] = P;								\
+	line0[2] = P;								\
+	line0[3] = P;								\
+	line0[4] = P;								\
+	line1[0] = P;								\
+	line1[1] = P;								\
+	line1[2] = P;								\
+	line1[3] = P;								\
+	line1[4] = P;								\
+	line2[0] = P;								\
+	line2[1] = P;								\
+	line2[2] = P;                               \
+	line2[3] = P;                               \
+	line2[4] = P;                               \
+	line3[0] = P;								\
+	line3[1] = P;								\
+	line3[2] = P;                               \
+	line3[3] = P;                               \
+	line3[4] = P;                               \
+	line4[0] = P;								\
+	line4[1] = P;								\
+	line4[2] = P;                               \
+	line4[3] = P;                               \
+	line4[4] = P;
+#include "render_simple.h"
+#undef SCALERNAME
+#undef SCALERWIDTH
+#undef SCALERHEIGHT
+#undef SCALERFUNC
+
+#define SCALERNAME		Normal6x
+#define SCALERWIDTH		6
+#define SCALERHEIGHT	6
+#define SCALERFUNC								\
+	line0[0] = P;								\
+	line0[1] = P;								\
+	line0[2] = P;								\
+	line0[3] = P;								\
+	line0[4] = P;								\
+	line0[5] = P;								\
+	line1[0] = P;								\
+	line1[1] = P;								\
+	line1[2] = P;								\
+	line1[3] = P;								\
+	line1[4] = P;								\
+	line1[5] = P;								\
+	line2[0] = P;								\
+	line2[1] = P;								\
+	line2[2] = P;                               \
+	line2[3] = P;                               \
+	line2[4] = P;                               \
+	line2[5] = P;                               \
+	line3[0] = P;								\
+	line3[1] = P;								\
+	line3[2] = P;                               \
+	line3[3] = P;                               \
+	line3[4] = P;                               \
+	line3[5] = P;                               \
+	line4[0] = P;								\
+	line4[1] = P;								\
+	line4[2] = P;                               \
+	line4[3] = P;                               \
+	line4[4] = P;                               \
+	line4[5] = P;                               \
+	line5[0] = P;								\
+	line5[1] = P;								\
+	line5[2] = P;                               \
+	line5[3] = P;                               \
+	line5[4] = P;                               \
+	line5[5] = P;
+#include "render_simple.h"
+#undef SCALERNAME
+#undef SCALERWIDTH
+#undef SCALERHEIGHT
+#undef SCALERFUNC
+
+#define SCALERNAME		Normal7x
+#define SCALERWIDTH		7
+#define SCALERHEIGHT	7
+#define SCALERFUNC								\
+	line0[0] = P;								\
+	line0[1] = P;								\
+	line0[2] = P;								\
+	line0[3] = P;								\
+	line0[4] = P;								\
+	line0[5] = P;								\
+	line0[6] = P;								\
+	line1[0] = P;								\
+	line1[1] = P;								\
+	line1[2] = P;								\
+	line1[3] = P;								\
+	line1[4] = P;								\
+	line1[5] = P;								\
+	line1[6] = P;								\
+	line2[0] = P;								\
+	line2[1] = P;								\
+	line2[2] = P;                               \
+	line2[3] = P;                               \
+	line2[4] = P;                               \
+	line2[5] = P;                               \
+	line2[6] = P;                               \
+	line3[0] = P;								\
+	line3[1] = P;								\
+	line3[2] = P;                               \
+	line3[3] = P;                               \
+	line3[4] = P;                               \
+	line3[5] = P;                               \
+	line3[6] = P;                               \
+	line4[0] = P;								\
+	line4[1] = P;								\
+	line4[2] = P;                               \
+	line4[3] = P;                               \
+	line4[4] = P;                               \
+	line4[5] = P;                               \
+	line4[6] = P;                               \
+	line5[0] = P;								\
+	line5[1] = P;								\
+	line5[2] = P;                               \
+	line5[3] = P;                               \
+	line5[4] = P;                               \
+	line5[5] = P;                               \
+	line5[6] = P;                               \
+	line6[0] = P;								\
+	line6[1] = P;								\
+	line6[2] = P;                               \
+	line6[3] = P;                               \
+	line6[4] = P;                               \
+	line6[5] = P;                               \
+	line6[6] = P;
+#include "render_simple.h"
+#undef SCALERNAME
+#undef SCALERWIDTH
+#undef SCALERHEIGHT
+#undef SCALERFUNC
+
+#define SCALERNAME		Normal8x
+#define SCALERWIDTH		8
+#define SCALERHEIGHT	8
+#define SCALERFUNC								\
+	line0[0] = P;								\
+	line0[1] = P;								\
+	line0[2] = P;								\
+	line0[3] = P;								\
+	line0[4] = P;								\
+	line0[5] = P;								\
+	line0[6] = P;								\
+	line0[7] = P;								\
+	line1[0] = P;								\
+	line1[1] = P;								\
+	line1[2] = P;								\
+	line1[3] = P;								\
+	line1[4] = P;								\
+	line1[5] = P;								\
+	line1[6] = P;								\
+	line1[7] = P;								\
+	line2[0] = P;								\
+	line2[1] = P;								\
+	line2[2] = P;                               \
+	line2[3] = P;                               \
+	line2[4] = P;                               \
+	line2[5] = P;                               \
+	line2[6] = P;                               \
+	line2[7] = P;                               \
+	line3[0] = P;								\
+	line3[1] = P;								\
+	line3[2] = P;                               \
+	line3[3] = P;                               \
+	line3[4] = P;                               \
+	line3[5] = P;                               \
+	line3[6] = P;                               \
+	line3[7] = P;                               \
+	line4[0] = P;								\
+	line4[1] = P;								\
+	line4[2] = P;                               \
+	line4[3] = P;                               \
+	line4[4] = P;                               \
+	line4[5] = P;                               \
+	line4[6] = P;                               \
+	line4[7] = P;                               \
+	line5[0] = P;								\
+	line5[1] = P;								\
+	line5[2] = P;                               \
+	line5[3] = P;                               \
+	line5[4] = P;                               \
+	line5[5] = P;                               \
+	line5[6] = P;                               \
+	line5[7] = P;                               \
+	line6[0] = P;								\
+	line6[1] = P;								\
+	line6[2] = P;                               \
+	line6[3] = P;                               \
+	line6[4] = P;                               \
+	line6[5] = P;                               \
+	line6[6] = P;                               \
+	line6[7] = P;                               \
+	line7[0] = P;								\
+	line7[1] = P;								\
+	line7[2] = P;                               \
+	line7[3] = P;                               \
+	line7[4] = P;                               \
+	line7[5] = P;                               \
+	line7[6] = P;                               \
+	line7[7] = P;
+#include "render_simple.h"
+#undef SCALERNAME
+#undef SCALERWIDTH
+#undef SCALERHEIGHT
+#undef SCALERFUNC
+
 #define SCALERNAME		NormalDw
 #define SCALERWIDTH		2
 #define SCALERHEIGHT	1
