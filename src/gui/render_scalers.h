@@ -28,12 +28,12 @@
 #if RENDER_USE_ADVANCED_SCALERS>0
 #define SCALER_MAXWIDTH 	1280 
 #define SCALER_MAXHEIGHT	1024
-#define SCALER_MAXX     	4096
+#define SCALER_MAXX     	8192
 #else
 // reduced to save some memory
 #define SCALER_MAXWIDTH 	800 
 #define SCALER_MAXHEIGHT	600
-#define SCALER_MAXX     	2048
+#define SCALER_MAXX     	4096
 #endif
 
 #if (SCALER_MAX_MUL_WIDTH * SCALER_MAXWIDTH) > SCALER_MAXX
