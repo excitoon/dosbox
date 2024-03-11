@@ -2212,7 +2212,11 @@ void GFX_Events() {
 #endif
 		default:
 			void MAPPER_CheckEvent(SDL_Event * event);
-			MAPPER_CheckEvent(&event);
+			Section_prop * sdl_sec=static_cast<Section_prop *>(control->GetSection("sdl"));
+			if (!sdl_sec->Get_bool("nocontrols"))
+			{
+				MAPPER_CheckEvent(&event);
+			}
 		}
 	}
 }
@@ -2257,6 +2261,9 @@ void Config_Add_SDL() {
 	Prop_string* Pstring;
 	Prop_int* Pint;
 	Prop_multival* Pmulti;
+
+	Pbool = sdl_sec->Add_bool("nocontrols",Property::Changeable::Always,false);
+	Pbool->Set_help("Turn off interactive events");
 
 	Pbool = sdl_sec->Add_bool("fullscreen",Property::Changeable::Always,false);
 	Pbool->Set_help("Start dosbox directly in fullscreen. (Press ALT-Enter to go back)");
