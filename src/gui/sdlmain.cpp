@@ -51,6 +51,8 @@
 #include "control.h"
 #include "render.h"
 
+#include "test_framework.h"
+
 #define MAPPERFILE "mapper-" VERSION ".map"
 //#define DISABLE_JOYSTICK
 
@@ -2750,6 +2752,9 @@ int main(int argc, char* argv[]) {
 		/* Init the keyMapper */
 		MAPPER_Init();
 		if (control->cmdline->FindExist("-startmapper")) MAPPER_RunInternal();
+
+		TestFrameworkThread thread;
+
 		/* Start up main machine */
 		control->StartUp();
 		/* Shutdown everything */

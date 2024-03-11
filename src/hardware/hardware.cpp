@@ -17,6 +17,7 @@
  */
 
 
+#include <iostream>
 #include <vector>
 #include <string.h>
 #include <stdlib.h>
@@ -733,6 +734,7 @@ void CAPTURE_AddImage(Bitu width, Bitu height, Bitu bpp, Bitu pitch, Bitu flags,
 		if (png_ptr) png_destroy_write_struct(&png_ptr, info_ptr ? &info_ptr:NULL);
 		/*close file*/
 		if (fp)	fclose(fp);
+		std::cout << "SCREENSHOT\n";
 	}
 #endif
 #if (C_SRECORD)
